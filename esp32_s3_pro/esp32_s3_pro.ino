@@ -40,7 +40,7 @@ void loop() {
   int hull1 = analogRead(HULL1);
   int hull2 = analogRead(HULL2);
 
-  double output=pid.getOutput(0, 2);
+  double output = pid.getOutput(0, 2);
 
   analogWrite(12,2);		
   delay(1000);
@@ -48,6 +48,8 @@ void loop() {
   Serial.print("The system is running.\n");
   Serial.print(output, 5);
   Serial.print("\n");
+
+  
 }
 
 
